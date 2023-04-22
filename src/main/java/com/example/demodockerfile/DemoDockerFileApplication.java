@@ -18,4 +18,8 @@ public class DemoDockerFileApplication {
 	public ResponseEntity<?> hello(){
 		return ResponseEntity.ok("Xin chao duc hoc docker");
 	}
+	@GetMapping("/hello")
+	public ResponseEntity<?> hello2(){
+		return ResponseEntity.ok("Xin chao duc hoc docker 2");
+	}
 }
