@@ -1,19 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Clone') {
             steps {
-                sh 'echo "Building"'
-            }
-        }
-        stage('Test') {
-            steps {
-                sh 'echo "Testing"'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'echo "Deploying"'
+                git branch: 'main', url: 'https://github.com/ducnguyen020914/jenkin-java.git'
             }
         }
     }
