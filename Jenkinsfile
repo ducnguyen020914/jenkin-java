@@ -6,7 +6,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/ducnguyen020914/jenkin-java.git'
             }
         }
-        stage('Clone') {
+        stage('EchoLog') {
             steps {
                 sh 'echo "Building"'
             }
