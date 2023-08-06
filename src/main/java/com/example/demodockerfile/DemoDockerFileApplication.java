@@ -16,6 +16,6 @@ public class DemoDockerFileApplication {
 
 	@GetMapping()
 	public ResponseEntity<?> hello(){
-		return ResponseEntity.ok("Xin chao duc hoc docker jenkin");
+		return ResponseEntity.ok("Xin chào duc hoc docker jenkin");
 	}
 }
