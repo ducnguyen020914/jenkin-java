@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Clone') {
             steps {
-                echo "This a job"
+                sh 'echo "Building"'
             }
         }
     }
